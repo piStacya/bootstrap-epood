@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meist - Bootstrap 5 e-pood">
+  <meta name="author" content="">
+  <title>Meist | Bootstrap 5 juhend</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand me-5" href="index.html">Bootstrap 5</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdownNaised" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Naised</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownNaised">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdownMehed" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Mehed</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMehed">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="meist.html">Meist</a>
+          </li>
+        </ul>
+
+        <!--Otsi vorm -->
+        <form class="d-flex me-1">
+          <div class="input-group">
+            <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+          </div>
+        </form>
+      </div>
+      <div class="float-end">
+
+        <!--Login ikoon-->
+        <button class="btn btn-link text-light" type="button"><span class="bi bi-person"></span></button>
+
+        <!--Ostukorvi ikoon-->
+        <a class="btn btn-primary" href="ostukorv.html"><span class="bi bi-cart3"></span></a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <!-- Pealkiri ja sissejuhatus -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h1 class="display-5 fw-semibold text-primary-emphasis">Meist</h1>
+          <p class="fs-5 fw-light">Bootstrap 5 e-pood on Eesti üksikpere-ettevõte, mis on jalatseid müünud alates 1720.
+            aastast. Meie eesmärk ei ole pakkuda kvaliteetseid ja mugavaid jalanõusid ning kindlasti mitte taskukohase hinnaga.</p>
+        </div>
+      </div>
+
+      <!--pilt ja väärtuste nimekiri (list group) -->
+      <div class="row mt-4 align-items-center">
+        <div class="col-lg-6 mb-4">
+          <img src="stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="img-fluid rounded-3" alt="Meie pood">
+        </div>
+        <div class="col-lg-6 mb-4">
+          <h3 class="mb-3">Meie väärtused</h3>
+          <!--LIST GROUP -->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><span class="bi bi-check-circle-fill text-success me-2"></span>Mittekvaliteetsed
+              materjalid</li>
+            <li class="list-group-item"><span class="bi bi-check-circle-fill text-success me-2"></span>Kiire ja tasuta
+              tööjõud</li>
+            <li class="list-group-item"><span class="bi bi-check-circle-fill text-success me-2"></span>Klienditugi on see mida meil ei ole</li>
+            <li class="list-group-item"><span class="bi bi-check-circle-fill text-success me-2"></span>30-päevane
+              tagastusõiguse puudus</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3 class="mb-3">Meie meeskond</h3>
+          <!-- TABEL -->
+          <table class="table table-striped table-hover align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Nimi</th>
+                <th scope="col">Ametikoht</th>
+                <th scope="col">E-post</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Madis Pähkel</td>
+                <td>Tegevjuht</td>
+                <td>pähkel@epood.ee</td>
+              </tr>
+              <tr>
+                <td>Mari Kiilas</td>
+                <td>Müügijuht</td>
+                <td>kiilas@epood.ee</td>
+              </tr>
+              <tr>
+                <td>Peeter Bober</td>
+                <td>Klienditugi</td>
+                <td>bober@epood.ee</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12">
+          <h3 class="mb-3">Meie uudised</h3>
+          <p>Loe lähemalt meie viimastest uudistest ja pakkumistest. Sirvi lehekülgi nuppude abil.</p>
+        </div>
+      </div>
+
+      <!--PAGINATION -->
+      <nav aria-label="Lehekülgede navigatsioon">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Eelmine</a>
+          </li>
+          <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Järgmine</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="footer bg-dark text-light">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary-emphasis">Bootstrap 5 e-pood</h5>
+          <p class="text-secondary">Kvaliteetsed jalatsid sulle ja su perele. Kiire tarne ja tagastus 1000000 päeva
+            jooksul.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Kontakt</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><span class="bi bi-geo-alt me-2"></span>Mandli tänav 999, Võru</li>
+            <li class="mb-2"><span class="bi bi-telephone me-2"></span>+372 9191 1919</li>
+            <li class="mb-2"><span class="bi bi-envelope me-2"></span>infoMandel@epood.ee</li>
+          </ul>
+        </div>
+        <div>
+        <div class="col-md-4 mb-4">
+          <h5>Jälgi meid</h5>
+          <a href="#" class="text-light fs-3 me-3" aria-label="Facebook"><span class="bi bi-facebook"></span></a>
+          <a href="#" class="text-light fs-3 me-3" aria-label="Instagram"><span class="bi bi-instagram"></span></a>
+          <a href="#" class="text-light fs-3 me-3" aria-label="YouTube"><span class="bi bi-youtube"></span></a>
+          <div class="mt-3">
+            <a href="meist.html" class="link-light">Meist</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-secondary border-top border-secondary py-3">
+        &copy; 2026 Bootstrap 5 Mandel e-pood. Kõik õigused ei ole kaitstud.
+      </div>
+    </div>
+  </footer>
+
+  <!--Popper.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <!--Bootstrap.js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
